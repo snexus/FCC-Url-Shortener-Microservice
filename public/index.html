@@ -6,18 +6,23 @@
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 <div class="center">
-  <h1 class="heading"> FCC API project: Request Header Parser</h1>
+  <h1 class="heading"> FCC API project: URL Shortener Microservice</h1>
   <blockquote>
     <span>User stories:</span>
-    <p>1) I can get the IP address, language and operating system for my browser.</p>
+    <p>1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</p>
+    <p>2) When I visit that shortened URL, it will redirect me to my original link </p>
+
   </blockquote>
   <div class="example">
    <h3>Example usage:</h3>
-            <code>https://salty-lake-33377.herokuapp.com/api/whoami</code><br>
+            <code>http://urlshortms.herokuapp.com/new/http://foo.com:80</code><br>
             <h3>Example output:</h3>
             <code>
-  {"ipaddress":"220.253.233.206","language":"en-US","software":"Windows NT 6.1; Win64; x64"}
+  {"shortUrl":"njftsjf","longUrl":"http://foo.com:80"}
             </code>
+            <h3>Restoring long url:</h3>
+            <code>http://urlshortms.herokuapp.com/hgvyfdx</code>
+            <p>Will redirect to www.google.com</p>
   </div>
 </div>
 </html>
