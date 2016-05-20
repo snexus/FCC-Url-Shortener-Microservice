@@ -3,14 +3,19 @@
 
 ## Quick Start Guide
 
-Visit https://salty-lake-33377.herokuapp.com
+Visit urlshortms.herokuapp.com
 
 ## User stories fullfiled
-1) I can get the IP address, language and operating system for my browser.
+    1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+    2) When I visit that shortened URL, it will redirect me to my original link 
 
 
 ##Example Usage
-`whttps://salty-lake-33377.herokuapp.com/api/whoami`
+`http://urlshortms.herokuapp.com/new/http://foo.com:80`
 
 ##Example output
-'{"ipaddress":"220.253.233.206","language":"en-US","software":"Windows NT 6.1; Win64; x64"}'
+'{"shortUrl":"njftsjf","longUrl":"http://foo.com:80"}'
+
+##Example restoring long url
+`http://urlshortms.herokuapp.com/hgvyfdx` - will redirect to www.google.com
+
